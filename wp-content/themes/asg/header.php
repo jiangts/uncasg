@@ -8,12 +8,13 @@
 <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Stem Classes - Engineering</title>
+        <title><?php echo get_the_title(); ?></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <script src="../js/vendor/modernizr-2.6.1.min.js"></script>
 		<?php include('/functions.php'); ?>
-		<style>
+		<link href="<?php bloginfo('template_directory'); ?>/style.css" rel="stylesheet" type="text/css" />
+		<!--<style>
 		
 		header#header .container div.menu {
 			float: right;
@@ -8604,7 +8605,7 @@ footer section.content .widget h4 {
     display: none;
   }
 }
-</style>
+</style>-->
     </head>
     <body>
         <!--[if lt IE 7]>
