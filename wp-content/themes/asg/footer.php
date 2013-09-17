@@ -41,13 +41,23 @@
         </footer><!-- /footer -->
 
 
-        <!-- Load scripts ================= -->
-        <script src="../../ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="http://error404.000webhost.com/?"><\/script>')</script>
-        <script src="../js/plugins.js"></script>
-        <script src="../js/main.js"></script>
 
-    </body>
 
-<!-- Mirrored from atkinswebmaster.net23.net/classes/engineering.html by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 08 Sep 2013 22:56:52 GMT -->
+		<!--INIT IMAGE SLIDER ON INDEX.PHP-->
+		<script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 940,
+        height: 528,
+        play: {
+          active: true,
+          auto: true,
+          interval: 4000,
+          swap: true
+        }
+      });
+    });
+  </script>
+	
+	</body>
 </html>

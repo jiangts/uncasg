@@ -1,6 +1,44 @@
 <?php get_header(); ?>
 
-<!-- /slider -->
+<section class="hero">
+            <div class="fullwidthbanner">
+                <ul> 
+                    
+					<li data-transition="fade">
+                        <img src="img/temp/slide-tsa.jpg" alt="">
+                        <div class="caption lft transparent red nt"  data-x="20" data-y="100" data-speed="400" data-start="200" data-easing="easeOutExpo">TSA</div>
+                        <div class="caption lft transparent red nt small_text"  data-x="20" data-y="156" data-speed="600" data-start="200" data-easing="easeOutExpo"><strong style="font-size:20px;">We have a highly active TSA Chapter. <br />Although we are very new,
+						we have<br /> placed repeatedly at the state level,<br /> and are competing at the national<br /> level this year.</strong></div>
+
+                        <div class="caption sfl" data-x="450" data-y="40" data-speed="500" data-start="800" data-easing="easeOutExpo"><img src="img/temp/tsa-logo.png"></div>
+
+                    </li>
+					<li data-transition="fade">
+                        <img src="img/temp/slide-discovery.jpg" alt="">
+                        <div class="caption lft transparent"  data-x="40" data-y="150" data-speed="400" data-start="400" data-easing="easeOutExpo">Atkins Academic and Technology High School</div>
+                        <div class="caption lft transparent"  data-x="40" data-y="205" data-speed="400" data-start="200" data-easing="easeOutExpo">A School of Discovery</div>
+                    </li>
+                    <!--<li data-transition="fade">
+                        <img src="img/orange.jpg" alt="">
+
+                        <div class="caption lft big_white"  data-x="400" data-y="100" data-speed="400" data-start="200" data-easing="easeOutExpo">STEM Classes</div>
+
+                        <div class="caption lfr small_text"  data-x="400" data-y="220" data-speed="300" data-start="800" data-easing="easeOutExpo">Computer Technology</div>
+                        <div class="caption lfr small_text"  data-x="400" data-y="250" data-speed="300" data-start="1000" data-easing="easeOutExpo">Biotechnology</div>
+                        <div class="caption lfr small_text"  data-x="400" data-y="280" data-speed="300" data-start="1200" data-easing="easeOutExpo">Pre-engineering</div>
+                    </li>
+                    <li data-transition="fade">
+                        <img src="img/purple.jpg" alt="">
+                        <div class="caption lfb" data-x="30" data-y="80">
+                            <img src="img/temp/colors.png" alt="">
+                        </div>
+                        <div class="caption lft large_text"  data-x="260" data-y="30" data-speed="400" data-start="400" data-easing="easeOutExpo">Seven different styles.</div>
+                    </li>-->
+                    
+                </ul>
+                <div class="tp-bannertimer"></div>
+            </div>
+        </section><!-- /slider -->
 
         <!-- Content area ================= -->
         <div id="main" role="main">
@@ -20,29 +58,7 @@
                 </div><!-- /container -->
             </section><!-- /call-to-action -->
 
-			
-				<div id="slides"><!--comment-->
-						<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
 
-							$args = array(
-								'post_type' => 'attachment',
-								'numberposts' => 1,
-								'orderby'=> 'menu_order',
-								'order' => 'ASC',
-								'post_mime_type' => 'image',
-								'post_status' => null,
-								'post_parent' => $post->ID
-							);
-
-							$attachments = get_posts( $args );
-							if ( $attachments ) {
-								foreach ( $attachments as $attachment ) {
-									echo wp_get_attachment_image($attachment->ID , 'full' );
-								}
-							}
-						endwhile; endif; ?>
-				</div>
-			
             <!-- Features area ================= -->
             <!--<section class="features">
 
